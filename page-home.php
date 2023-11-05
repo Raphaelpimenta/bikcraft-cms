@@ -7,7 +7,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<section class="introducao">
 			<div class="container">
-				<h1>Bicicletas Feitas a Mão</h1>
+				<h1><?php the_field('titulo_introducao') ?></h1>
 				<blockquote class="quote-externo">
 					<p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
 					<cite>WILLIAM MORRIS</cite>
@@ -17,8 +17,7 @@
 		</section>
 		
 		<section class="produtos container animar">
-			<h2 class="subtitulo"><?php the_field('nome') ?> </h2>
-			<h2 class="subtitulo"><?php echo get_post_meta(get_the_ID(), 'nome', true) ?> </h2>
+			<h2 class="subtitulo">Produtos</h2>
 			<ul class="produtos_lista">
 
 				<li class="grid-1-3">
