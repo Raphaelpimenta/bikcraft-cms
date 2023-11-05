@@ -17,7 +17,8 @@
 		</section>
 		
 		<section class="produtos container animar">
-			<h2 class="subtitulo">Produtos</h2>
+			<h2 class="subtitulo"><?php the_field('nome') ?> </h2>
+			<h2 class="subtitulo"><?php echo get_post_meta(get_the_ID(), 'nome', true) ?> </h2>
 			<ul class="produtos_lista">
 
 				<li class="grid-1-3">
