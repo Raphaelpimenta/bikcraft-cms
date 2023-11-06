@@ -9,8 +9,8 @@
 			<div class="container">
 				<h1><?php the_field('titulo_introducao') ?></h1>
 				<blockquote class="quote-externo">
-					<p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
-					<cite>WILLIAM MORRIS</cite>
+					<p><?php the_field('descricao_introducao') ?></p>
+					<cite><?php the_field('cite_introducao') ?></cite>
 				</blockquote>
 				<a href="/produtos/" class="btn">Orçamento</a>
 			</div>
@@ -47,7 +47,7 @@
 			</ul>
 
 			<div class="call">
-				<p>clique aqui e veja os detalhes dos produtos</p>
+				<p><?php the_field('chamar_produtos')?></p>
 				<a href="produtos.html" class="btn btn-preto">Produtos</a>
 			</div>
 

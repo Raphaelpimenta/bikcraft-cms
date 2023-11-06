@@ -21,6 +21,24 @@ function cmb2_fields_home(){
         'type' => 'text',
     ]);
 
+    $cmb->add_field([
+        'name' => 'Frase',
+        'id' => 'descricao_introducao',
+        'type' => 'text',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Citador',
+        'id' => 'cite_introducao',
+        'type' => 'text',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Chamar Produtos',
+        'id' => 'chamar_produtos',
+        'type' => 'text',
+    ]);
+
 }
 
 ?>
