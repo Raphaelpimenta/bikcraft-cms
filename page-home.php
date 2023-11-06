@@ -61,10 +61,8 @@
 			</div>
 		</section>
 
-		<section class="qualidade container">
-			<h2 class="subtitulo">Qualidade</h2>
-			<?php include(TEMPLATEPATH . './inc/qualidade.php')?>
-		</section>
+		
+		<?php include(TEMPLATEPATH . './inc/qualidade.php')?>
 
 <?php endwhile; else: endif; ?>
 

@@ -1,3 +1,4 @@
+<?php $portfolio = get_page_by_title('portfolio')->ID?>
 <ul class="portfolio_lista rslides_portfolio">
 
     <li>
@@ -13,3 +14,10 @@
 </li>
 
 </ul>
+
+<?php if (!is_page('portfolio')) { ?>
+<div class="call">
+	<p><?php the_field('chamada_portfolio', $portfolio); ?></p>
+	<a href="/portfolio/" class="btn">Portfólio</a>
+</div>
+<?php } ?>
