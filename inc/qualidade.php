@@ -1,3 +1,4 @@
+<?php $sobre = get_page_by_title('sobre')->ID?>
 <section class="qualidade container">
     <h2 class="subtitulo">Qualidade</h2>
     <img src="img/bikcraft-qualidade.png" alt="Bikcraft">
@@ -17,7 +18,7 @@
     </ul>
     <?php if(!is_page('sobre')) { ?>
     <div class="call">
-    	<p>conheça mais a nossa história</p>
+		<p><?php the_field('chamar_sobre_btn', $sobre)?></p>
     	<a href="/sobre/" class="btn btn-preto">Sobre</a>
     </div>
     <?php } ?>

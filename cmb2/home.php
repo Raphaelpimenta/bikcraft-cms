@@ -9,7 +9,7 @@ function cmb2_fields_home(){
         'title' => 'Página Home',
         'object_types' => ['page'],
         'show_on' => [
-            'key' => 'page_template',
+            'key' => 'page-template',
             'value' => 'page-home.php',
         ],
     ]);
