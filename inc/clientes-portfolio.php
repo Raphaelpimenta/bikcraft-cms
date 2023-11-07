@@ -1,17 +1,20 @@
 <?php $portfolio = get_page_by_title('portfolio')->ID?>
 <ul class="portfolio_lista rslides_portfolio">
+    <?php $item_portfolio = get_field('item_portfolio', $portfolio);
+    if(isset($item_portfolio)) { foreach($item_portfolio as $item){ ?>
 
     <li>
-        <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
-        <div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
-        <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
+        <div class="grid-8"><img src="<?php echo $item['portfolio_imagem1']; ?>" alt="<?php echo $item['portfolio_imagem_descricao1']; ?>"></div>
+        <div class="grid-8"><img src="<?php echo $item['portfolio_imagem2']; ?>" alt="<?php echo $item['portfolio_imagem_descricao2']; ?>"></div>
+        <div class="grid-16"><img src="<?php echo $item['portfolio_imagem3']; ?>" alt="<?php echo $item['portfolio_imagem_descricao3']; ?>"></div>
     </li>
 
-    <li>
+    <?php } }?>
+    <!-- <li>
         <div class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></div>
         <div class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></div>
         <div class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></div>
-</li>
+    </li> -->
 
 </ul>
 
