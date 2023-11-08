@@ -24,13 +24,22 @@ function cmb2_fields_home(){
     $cmb->add_field([
         'name' => 'Frase',
         'id' => 'descricao_introducao',
-        'type' => 'text',
+        'type' => 'textarea_small',
     ]);
 
     $cmb->add_field([
         'name' => 'Citador',
         'id' => 'cite_introducao',
         'type' => 'text',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Background Home',
+        'id' => 'background_home',
+        'type' => 'file',
+        'options' => [
+            'url' => false,
+        ],
     ]);
 
     $cmb->add_field([
