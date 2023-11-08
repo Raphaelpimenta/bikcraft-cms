@@ -9,7 +9,34 @@ function cmb2_fields_sobre(){
         'object_types' => ['page'],
         'show_on' => [
             'key' => 'page-template',
-            'value' => 'page-sobre.php',
+            'value' => ['page-sobre.php'],
+        ],
+    ]);
+
+    $cmb->add_field([
+        'name' => 'História, Missão e Visão (Parágrafo 1)',
+        'id' => 'missao1',
+        'type' => 'textarea_small',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'História, Missão e Visão (Parágrafo 2)',
+        'id' => 'missao2',
+        'type' => 'textarea_small',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Valores',
+        'id' => 'valores',
+        'type' => 'wysiwyg'
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Imagem Equipe',
+        'id' => 'imagem_equipe',
+        'type' => 'file',
+        'options' => [
+            'url' => false,
         ],
     ]);
 

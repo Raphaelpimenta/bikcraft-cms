@@ -23,6 +23,7 @@
 /* @media only screen and (max-width: 767px){
 	.introducao{
 		background: url("<?php the_field('background_home');?>") no-repeat center;
+		background-size: cover;
 	}
 } */
 
