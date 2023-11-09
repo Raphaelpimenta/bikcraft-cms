@@ -2,7 +2,7 @@
 
 <style type="text/css">
 	.quebra{
-		background: url("<?php the_field('background_footer');?>") no-repeat center;
+		background: url("<?php the_field('background_footer', $contato);?>") no-repeat center;
 		background-size: cover;
 	}
 </style>

@@ -81,7 +81,7 @@
 		<section class="portfolio">
 			<div class="container">
 				<h2 class="subtitulo">Portfólio</h2>
-				<?php include(TEMPLATEPATH . './inc/clientes-portfolio.php')?>
+				<?php include(TEMPLATEPATH . './inc/imagens-portfolio.php')?>
 			</div>
 		</section>
 
