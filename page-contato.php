@@ -38,12 +38,7 @@
 				<span><?php the_field('endereco_bairro');?></span>
 				<!-- <span>Rio de Janeiro - RJ - Brasil</span> -->
 				<span><?php the_field('endereco_cidade');?></span>
-				<h3>Redes Sociais</h3>
-				<!-- <ul>
-					<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Facebook Bikcraft"></a></li>
-					<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Instagram Bikcraft"></a></li>
-					<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Twitter Bikcraft"></a></li>
-				</ul> -->
+				<h3>Redes Sociais</h3>		
 				<?php include(TEMPLATEPATH . "./inc/redes-sociais.php"); ?>
 			</div>
 		</section>
