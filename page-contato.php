@@ -29,14 +29,10 @@
 			</form>
 
 			<div class="contato_dados grid-8">
-				<h3>Dados</h3>
-				<!-- <span>+55 21 9999-9999</span> -->
+				<h3>Dados</h3>	
 				<span><?php the_field('telefone');?></span>
-				<!-- <span>orcamento@bikcraft.com</span> -->
 				<span><?php the_field('email');?></span>
-				<!-- <span>Rua Ali Perto - Botafogo</span> -->
 				<span><?php the_field('endereco_bairro');?></span>
-				<!-- <span>Rio de Janeiro - RJ - Brasil</span> -->
 				<span><?php the_field('endereco_cidade');?></span>
 				<h3>Redes Sociais</h3>		
 				<?php include(TEMPLATEPATH . "./inc/redes-sociais.php"); ?>
