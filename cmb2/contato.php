@@ -92,6 +92,35 @@ function cmb2_page_contato(){
         'id' => 'texto_mapa',
         'type' => 'text',
     ]);
+
+    //Footer
+    $cmb->add_field([
+        'name' => 'Background Footer',
+        'id' => 'background_footer',
+        'type' => 'file',
+        'options' => [
+            'url' => false,
+        ],
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Frase Rodapé',
+        'id' => 'footer_frase',
+        'type' => 'textarea_small',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Autor Rodapé',
+        'id' => 'footer_autor',
+        'type' => 'text',
+    ]);
+
+    $cmb->add_field([
+        'name' => 'Resumo da História',
+        'id' => 'resumo_historia',
+        'type' => 'textarea_small',
+    ]);
+
 }
 
 ?>
