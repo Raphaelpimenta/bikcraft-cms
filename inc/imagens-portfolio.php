@@ -1,5 +1,6 @@
 <?php $portfolio = get_page_by_title('portfolio')->ID?>
 <ul class="portfolio_lista rslides_portfolio">
+    
     <?php $item_portfolio = get_field('item_portfolio', $portfolio);
     if(isset($item_portfolio)) { foreach($item_portfolio as $item){ ?>
 
