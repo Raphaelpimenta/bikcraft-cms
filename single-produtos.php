@@ -19,14 +19,15 @@
 				<img src="<?php the_field('imagem_produtos2')?>img/produtos/bikcraft-passeio-2.jpg" alt="Bikcraft <?php the_title();?>">
 			</div>
 			<div class="grid-8 produto_info">
-				<!-- <p>Muito melhor do que passear pela orla a vidros fechados. A Bikcraft Passeio é uma bicicleta que une conforto e praticidade para o seu dia a dia. Você nunca mais vai querer saber de outra.</p>
+				<!-- <p>Muito melhor do que passear pela orla a vidros fechados. A Bikcraft Passeio é uma bicicleta que une conforto e praticidade para o seu dia a dia. Você nunca mais vai querer saber de outra.</p> -->
+                <?php the_content();?>
 				<ul>
 					<li>Conforto</li>
 					<li>Praticidade</li>
 					<li>Design</li>
 					<li>Versatilidade</li>
-				</ul> -->
-                <?php the_content();?>
+				</ul>
+                
 			</div>
 		</section>
 

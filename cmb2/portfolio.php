@@ -9,7 +9,7 @@ function cmb2_fields_portfolio(){
         'object_types' => ['page'],
         'show_on' => [
             'key' => 'page-template',
-            'value' => ['page-portfolio.php'],
+            'value' => 'page-portfolio.php',
         ],
     ]);
 

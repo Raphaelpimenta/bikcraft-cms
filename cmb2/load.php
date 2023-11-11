@@ -14,4 +14,5 @@ function the_field($key, $page_id = 0) {
   require_once get_template_directory() . '/cmb2/portfolio.php';
   require_once get_template_directory() . '/cmb2/paginas-internas.php';
   require_once get_template_directory() . '/cmb2/contato.php';
+  require_once get_template_directory() . '/cmb2/single_produtos.php';
 ?>

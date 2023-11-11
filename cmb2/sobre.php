@@ -9,7 +9,7 @@ function cmb2_fields_sobre(){
         'object_types' => ['page'],
         'show_on' => [
             'key' => 'page-template',
-            'value' => ['page-sobre.php'],
+            'value' => 'page-sobre.php',
         ],
     ]);
 
