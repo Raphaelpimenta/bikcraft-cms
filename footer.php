@@ -20,7 +20,7 @@
 
 					<div class="grid-8 footer_historia">
 						<h3>Nossa História</h3>
-						<p><?php the_field('resumo_historia');?></p>
+						<p><?php the_field('resumo_historia', $contato);?></p>
 					</div>
 
 					<div class="grid-4 footer_contato">

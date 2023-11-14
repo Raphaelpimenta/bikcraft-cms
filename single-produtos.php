@@ -9,7 +9,6 @@
 		<section class="container produto_item animar-interno">
 			<div class="grid-11">
 				<img src="<?php the_field('imagem_produtos1');?>" alt="Bikcraft <?php the_title();?>">
-				<!-- <h2>Passeio</h2> -->
 				<h2><?php the_field('titulo_produtos');?></h2>
 			</div>
 			<div class="grid-5 produto_icone">
