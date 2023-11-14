@@ -31,7 +31,8 @@
 		</section>
 
 		<?php endwhile; else: endif; ?>
-
+		<!-- // Reset o Loop -->
+		<?php wp_reset_query(); wp_reset_postdata(); ?>
 		
 
 		<?php include(TEMPLATEPATH . "./inc/produtos-orcamento.php") ?>

@@ -63,7 +63,8 @@
 				</a>
 				</li>
 			<?php endwhile; else: endif; ?>
-				
+			<!-- // Reset o Loop -->
+			<?php wp_reset_query(); wp_reset_postdata(); ?>
 
 			</ul>
 
