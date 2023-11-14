@@ -3,6 +3,22 @@
 // carrega os campos personalizados do CMB2
 require_once get_template_directory() . '/cmb2/load.php';
 
+// Função para registrar os Scripts e o CSS
+function origamid_scripts() {
+	wp_register_script('simple-slide', get_template_directory_uri() . './js/simple-slide.js', [], false, true);
+	wp_register_script('simple-anime', get_template_directory_uri() . './js/simple-anime.js', [], false, true);
+	wp_register_script('simple-form', get_template_directory_uri() . './js/simple-form.js', [], false, true);
+	wp_register_script('script', get_template_directory_uri() . './js/script.js', ['simple-slide', 'simple-anime', 'simple-form'], false, true);
+	wp_enqueue_script('script');
+  }
+  add_action('wp_enqueue_scripts', 'origamid_scripts');
+  
+  function origamid_css() {
+	wp_register_style('origamid-style', get_template_directory_uri() . '/style.css', array(), false, false);
+	wp_enqueue_style('origamid-style');
+  }
+  add_action('wp_enqueue_scripts', 'origamid_css');
+
 
 // Funções para Limpar o Header
 remove_action('wp_head', 'rsd_link');
