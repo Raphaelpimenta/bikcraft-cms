@@ -48,6 +48,8 @@ function cmb2_fields_home(){
         'type' => 'text',
     ]);
 
+    
+
 }
 
 ?>

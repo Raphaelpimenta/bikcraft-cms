@@ -72,6 +72,12 @@ function cmb2_single_produtos(){
         'id' => 'lista_item4',
         'type' => 'text',
     ]);
+
+    $cmb->add_field([
+        'name' => 'Descrição dos Produtos',
+        'id' => 'produtos_descricao_lista',
+        'type' => 'textarea_small',
+    ]);
 }
 
 
