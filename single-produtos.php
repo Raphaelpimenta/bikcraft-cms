@@ -23,10 +23,7 @@
                
 				<p><?php the_field('texto_produtos');?></p>
 				<ul>
-					<!-- <li>Conforto</li>
-					<li>Praticidade</li>
-					<li>Design</li>
-					<li>Versatilidade</li> -->
+					
 					<li><?php the_field('lista_item1')?></li>
 					<li><?php the_field('lista_item2')?></li>
 					<li><?php the_field('lista_item3')?></li>
